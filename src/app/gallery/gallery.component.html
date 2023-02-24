@@ -1,0 +1,8 @@
+<body>
+    <div class="tarjeta">
+        <div *ngFor="let item of galeria">
+            <!-- [rutaPortada]="item.rutaPortada" -->
+            <app-card [rutaPortada]="item.rutaPortada" [nombre]="item.nombre" [datos]="item.datos"></app-card>
+        </div>
+    </div>
+</body>

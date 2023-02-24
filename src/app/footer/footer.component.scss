@@ -1,0 +1,45 @@
+@import "../partials/colors";
+@import "../partials/fonts";
+
+footer {
+    font-family: $footer;
+    background-color: $principal;
+    text-align: center;
+    img{
+        margin-left: 7px;
+    }
+    p {
+        color: $text;
+        font-family: $footer;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    iframe{
+        width: 100px;
+        height: 100px;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        div{
+            width: 90%;
+            padding: 20px;
+            padding-right: 0px;
+        }
+    }
+}
+
+@media screen and (min-width: 900px) {   
+    .container{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-items: center;
+        div{
+            width: 90%;
+            padding: 20px;
+        }
+    }
+}

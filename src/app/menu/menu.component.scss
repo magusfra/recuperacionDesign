@@ -1,0 +1,34 @@
+@import "../partials/colors";
+@import "../partials/fonts";
+
+
+ul {
+  overflow: hidden;
+  background-color: $principal;
+}
+
+li {
+  float: left;
+}
+h1{
+    color: $text;
+    font-family: $h1;
+    font-size: 43px;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 28px 16px;
+  text-decoration: none;
+  margin-left: 15px;
+  color: $text;
+  font-family: $h1;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 900px) {
+    li a {
+        display: none;
+    }
+}

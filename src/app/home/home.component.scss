@@ -1,0 +1,64 @@
+@import "../partials/colors";
+@import "../partials/fonts";
+
+body {
+    background-color: $backgroundComponents;
+    p {
+        font-family: $content;
+        color: $textComponents;
+    }
+
+    h1 {
+        font-family: $h1;
+        font-size: 40px;
+        color: $textComponents;
+    }
+
+    h2 {
+        font-family: $h2;
+        color: $textComponents;
+    }
+
+    .video {
+        display: grid;
+        place-content: center;
+        margin-top: 40px;
+    }
+
+    .contentHome {
+        margin-top: 50px;
+        margin-bottom: 60px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .videoPresentacion{
+        align-content: center;
+        margin: auto;
+        width: 90%;
+        video{
+            width: 100%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+    
+}
+@media screen and (min-width: 900px) {
+    .videoPresentacion{
+        align-content: center;
+        margin: auto;
+        width: 70%;
+        video{
+            width: 100%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+    p {
+        margin-left: 240px;
+        margin-right: 240px;
+    }
+    h2 {
+        margin-left: 240px;
+    }
+}
